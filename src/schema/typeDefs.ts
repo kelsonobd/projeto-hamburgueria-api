@@ -11,6 +11,18 @@ const typeDefs = gql`
     categoria:String
     }
 
+    type Usuario {
+      id: ID!
+      nome: String!
+      email: String
+    }
+
+  type AuthPayload {
+    token: String!
+    usuario: Usuario!
+  }
+
+
     type Query{
     hello: String
     hamburgueres:[Hamburguer!]
@@ -37,6 +49,8 @@ const typeDefs = gql`
     disponivel: Boolean
     categoria: String
   ): Hamburguer
+
+  login(email: String!, senha: String!) : AuthPayload
 }
 `;
 
