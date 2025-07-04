@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/graphql": "^14.2.3",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.0.7",
     "@typescript-eslint/eslint-plugin": "^8.35.0",
     "@typescript-eslint/parser": "^8.35.0",
@@ -38,6 +39,7 @@
     "concat-map": "^0.0.1",
     "create-require": "^1.1.1",
     "diff": "^4.0.2",
+    "dotenv": "^17.0.1",
     "dynamic-dedupe": "^0.3.0",
     "fill-range": "^7.1.1",
     "fs.realpath": "^1.0.0",
